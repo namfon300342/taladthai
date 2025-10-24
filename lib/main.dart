@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/constants.dart';
 import 'features/home/presentation/pages/home_page.dart';
+import 'features/upload_image/presentation/pages/upload_image_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/',
           page: () => const HomePage(),
+        ),
+        GetPage(
+          name: '/upload-img',
+          page: () => const UploadImagePage(),
         ),
       ],
       debugShowCheckedModeBanner: false,
